@@ -119,9 +119,11 @@ class DatabaseTableWindow(QWidget):
 
     def closeEvent(self, event):
         global database
+        global is_admin
         if database.isOpen():
             database.close()
 
+        is_admin = False
         event.accept()
     
 class MainWindow(QWidget):

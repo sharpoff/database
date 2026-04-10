@@ -59,7 +59,8 @@ try:
 
     # fill in test data
     cursor.execute(sql.SQL('''
-        INSERT INTO USERS VALUES (0, 'Администратор', 'Николай Алексеевич', 'bocha', '123');
+        INSERT INTO USERS VALUES (0, 'Администратор', 'Николай Алексеевич', 'bocha', '123'),
+            (1, 'Пользователь', 'Васян Васянович', 'vasyan', '321');
         COMMIT;'''
     ))
 
